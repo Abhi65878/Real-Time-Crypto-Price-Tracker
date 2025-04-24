@@ -17,5 +17,18 @@ A responsive web application that displays real-time cryptocurrency data with li
 - **Vite**
 - **Font Awesome**
 
+## Project Structure
+src/
+├── app/
+│   └── store.js
+├── features/
+│   └── crypto/
+│       ├── cryptoSlice.js
+│       └── mockData.js
+├── App.js
+├── index.js
+└── index.css 
+|__ 
+
 🌐 Live Demo
 👉 https://real-time-crypto-price-tracker-one.vercel.app/
