@@ -1,4 +1,4 @@
- .container {
+ /* .container {
    padding: 16px;
    overflow-x: auto;
    font-family: Arial, Helvetica, sans-serif;
@@ -74,4 +74,142 @@
 
  .chart-placeholder.large {
    font-size: 60px;
+ } */
+
+
+
+ .container {
+   padding: 16px;
+   overflow-x: auto;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .crypto-table {
+   width: 100%;
+   border-collapse: collapse;
+   min-width: 900px;
+ }
+
+ .crypto-table th,
+ .crypto-table td {
+   padding: 8px;
+   text-align: center;
+   border-bottom: 1px solid #ccc;
+   white-space: nowrap;
+ }
+
+ .crypto-table thead {
+   background-color: #f0f0f0;
+ }
+
+ .positive {
+   color: green;
+ }
+
+ .negative {
+   color: red;
+ }
+
+ .name-column {
+   text-align: left;
+ }
+
+ .name-logo {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
+
+ .asset-logo {
+   width: 32px;
+   height: 32px;
+   object-fit: contain;
+ }
+
+ .asset-info {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   line-height: 1.2;
+ }
+
+ .asset-name {
+   font-weight: bold;
+ }
+
+ .asset-symbol {
+   font-size: 12px;
+   color: #666;
+ }
+
+ .chart-placeholder {
+   font-size: 40px;
+   line-height: 1.5;
+ }
+
+ .chart-placeholder.large {
+   font-size: 60px;
+ }
+
+ .chart-cell {
+   width: 100px;
+   height: 40px;
+ }
+
+ @media (max-width: 768px) {
+   .container {
+     padding: 12px;
+   }
+
+   .crypto-table th,
+   .crypto-table td {
+     padding: 6px;
+     font-size: 14px;
+   }
+
+   .asset-logo {
+     width: 24px;
+     height: 24px;
+   }
+
+   .chart-cell {
+     width: 80px;
+     height: 30px;
+   }
+
+   .chart-placeholder {
+     font-size: 30px;
+   }
+
+   .chart-placeholder.large {
+     font-size: 40px;
+   }
+ }
+
+ @media (max-width: 480px) {
+   .crypto-table {
+     font-size: 12px;
+   }
+
+   .name-logo {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+
+   .asset-info {
+     align-items: center;
+   }
+
+   .chart-cell {
+     width: 60px;
+     height: 25px;
+   }
+
+   .chart-placeholder {
+     font-size: 24px;
+   }
+
+   .chart-placeholder.large {
+     font-size: 32px;
+   }
  }
